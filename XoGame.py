@@ -15,8 +15,8 @@ def board():
     my.penup()
     my.goto(0, BOARD_SIZE)
     my.pendown()
-    my.color("orange")
-    my.write("Welcome to Aner's game ©", move=False, align="CENTER", font=("cooper black", 30, "bold"))
+    my.color("blue violet")
+    my.write("Let's Play Tic-Tac-Tow", move=False, align="CENTER", font=("cooper black", 30, "bold"))
 
     my.penup()
     my.goto(-BOARD_SIZE / 2, -BOARD_SIZE / 6)
@@ -187,7 +187,7 @@ def play_turn(y, x):
                     my.goto(0, BOARD_SIZE - 40)
                     my.pendown()
                     my.speed(100)
-                    my.color("PURPLE")
+                    my.color("orange")
                     my.write("O WINS!", move=False, align="CENTER", font=("Verdana", 20, "bold"))
                     game_board = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
 
@@ -205,7 +205,7 @@ def play_turn(y, x):
                     my.goto(0, BOARD_SIZE - 40)
                     my.pendown()
                     my.speed(100)
-                    my.color("PURPLE")
+                    my.color("orange")
                     my.write("X WINS!", move=False, align="CENTER", font=("Verdana", 20, "bold"))
                     game_board = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
 
